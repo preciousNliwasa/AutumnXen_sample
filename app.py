@@ -229,7 +229,7 @@ async def recover_account(mnemonic_phrase : str,current_user: User = Depends(get
 from web3 import Web3
 from web3.middleware import geth_poa_middleware
 
-w3 = Web3(Web3.HTTPProvider("https://goerli.infura.io/v3/e5741557bb644b8e8cbfdd8b5cec7c9b"))
+w3 = Web3(Web3.HTTPProvider("put an infura endpoint"))
 
 w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
